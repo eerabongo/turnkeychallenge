@@ -166,7 +166,6 @@ BEGIN
 	END IF;
 	CLOSE c1;
 RETURN employee_detail;
-
 EXCEPTION
 WHEN OTHERS THEN
    raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
